@@ -33,7 +33,7 @@ require("lazy").setup({
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
   install = { colorscheme = { "solarized-osaka" } },
-  checker = { enabled = true }, -- automatically check for plugin updates
+  checker = { enabled = true, notify = false, frequency = 86400 }, -- automatically check for plugin updates
   performance = {
     cache = { enabled = true },
     rtp = {
